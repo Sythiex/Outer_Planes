@@ -1,0 +1,20 @@
+package com.sythiex.outerplanes;
+
+import net.minecraft.world.WorldProvider;
+import net.minecraft.world.biome.WorldChunkManager;
+import net.minecraft.world.biome.WorldChunkManagerHell;
+
+public class WorldProviderElysium extends WorldProvider
+{
+	public void registerWorldChunkManager()
+	{
+		this.worldChunkMgr = new WorldChunkManagerHell(null, 1.0F);
+		this.dimensionId = OuterPlanes.dimIDElysium;
+	}
+	
+	@Override
+	public String getDimensionName()
+	{
+		return null;
+	}
+}

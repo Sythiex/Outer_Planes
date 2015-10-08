@@ -1,10 +1,20 @@
 package com.sythiex.outerplanes;
 
+import com.sythiex.outerplanes.elysium.PortalElysium;
+import com.sythiex.outerplanes.elysium.WorldProviderElysium;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraftforge.common.DimensionManager;
+import net.minecraftforge.common.config.ConfigCategory;
 import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
 
 @Mod(modid = OuterPlanes.MODID, version = OuterPlanes.VERSION)
 public class OuterPlanes
@@ -14,13 +24,18 @@ public class OuterPlanes
     
     public static int dimElysiumID;
     
+    public static Block portalBlockElysium;
+    
+    public static Item portalMaker;
+    
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
     	Configuration config = new Configuration(event.getSuggestedConfigurationFile());
     	config.load();
     	
-    	dimElysiumID = config.get("Dimension IDs", "dimElysiumID", 5).getInt();
+    	ConfigCategory dimensionIDs = new ConfigCategory("Dimension IDs");
+    	dimElysiumID = config.get("Dimension IDs", "Elysium ID", 5).getInt();
     	
     	config.save();
     }
@@ -28,6 +43,22 @@ public class OuterPlanes
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
+    	DimensionManager.registerProviderType(dimElysiumID, WorldProviderElysium.class, false);
+    	DimensionManager.registerDimension(dimElysiumID, dimElysiumID);
     	
+    	registerBlocks();
+    	registerItems();
+    }
+    
+    private void registerBlocks()
+    {
+    	portalBlockElysium = new PortalElysium();
+    	GameRegistry.registerBlock(portalBlockElysium, "portalElysium");
+    }
+    
+    private void registerItems()
+    {
+    	portalMaker = new PortalMaker();
+    	GameRegistry.registerItem(portalMaker, "portalMaker");
     }
 }

@@ -1,0 +1,11 @@
+# Configuration file
+
+"Dimension IDs" {
+}
+
+
+"dimension ids" {
+    I:dimElysiumID=5
+}
+
+

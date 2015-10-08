@@ -1,0 +1,17 @@
+package com.sythiex.outerplanes;
+
+import net.minecraft.world.WorldProvider;
+
+public class WorldProviderElysium extends WorldProvider
+{
+	public void registerWorldChunkManager()
+	{
+		
+	}
+	
+	@Override
+	public String getDimensionName()
+	{
+		return null;
+	}
+}
