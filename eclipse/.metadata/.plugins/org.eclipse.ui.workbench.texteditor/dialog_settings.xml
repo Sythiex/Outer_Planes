@@ -2,22 +2,23 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="portalFrameBlockElysium" key="selection"/>
+		<item value="creatureType" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="Blocks.obsidian"/>
-			<item value="Blocks.portal"/>
-			<item value="p_77185_1_"/>
-			<item value="p_i1963_1_"/>
-			<item value="false"/>
-			<item value="destinationCoordinateCache"/>
-			<item value="worldServerInstance"/>
-			<item value="use"/>
+			<item value="p_73155_1_"/>
+			<item value="mob"/>
+			<item value="skylightSubtracted"/>
+			<item value="caveGenerator"/>
+			<item value="ravineGenerator"/>
+			<item value="scatteredFeatureGenerator"/>
+			<item value="mineshaftGenerator"/>
+			<item value="Block"/>
 		</list>
 		<list key="replacehistory">
+			<item value="creatureType"/>
 			<item value="portalFrameBlockElysium"/>
 			<item value="OuterPlanes.portalBlockElysium"/>
 			<item value="OuterPlanes."/>
@@ -25,14 +26,13 @@
 			<item value="PortalOP.portalFrameBlockElysium"/>
 			<item value="PortalOP."/>
 			<item value="portalFrame"/>
-			<item value="x"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="1382" key="DIALOG_X_ORIGIN"/>
-		<item value="183" key="DIALOG_Y_ORIGIN"/>
+		<item value="1448" key="DIALOG_X_ORIGIN"/>
+		<item value="59" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

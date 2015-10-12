@@ -1,0 +1,6 @@
+package com.sythiex.outerplanes;
+
+public class PopulateChunkEventHandler
+{
+	@SubscribeEvent(priority=EventPriority.HIGHEST, receiveCanceled=true)
+}

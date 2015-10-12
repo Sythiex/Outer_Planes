@@ -42,4 +42,10 @@
 <fullyQualifiedTypeName name="com.sythiex.outerplanes.elysium.TeleporterElysium"/>
 <fullyQualifiedTypeName name="net.minecraft.world.Teleporter"/>
 <fullyQualifiedTypeName name="com.sythiex.outerplanes.OuterPlanes"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.EventPriority"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.SubscribeEvent"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.Event.Result"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPostInitializationEvent"/>
 </qualifiedTypeNameHistroy>

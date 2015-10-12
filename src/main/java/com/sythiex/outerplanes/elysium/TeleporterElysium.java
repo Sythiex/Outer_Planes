@@ -32,7 +32,7 @@ public class TeleporterElysium extends Teleporter
      * location.
      */
     private final List destinationCoordinateKeys = new ArrayList();
-    private static final String __OBFID = "CL_00000153";
+    //private static final String __OBFID = "CL_00000153";
 
     public TeleporterElysium(WorldServer worldServer)
     {
