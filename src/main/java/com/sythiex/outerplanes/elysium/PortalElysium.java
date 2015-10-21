@@ -35,11 +35,11 @@ public class PortalElysium extends BlockPortal
 			{
 				player.timeUntilPortal = 10;
 			}
-			else if (player.dimension != OuterPlanes.dimElysiumID)
+			else if (player.dimension != OuterPlanes.dimAmoriaID)
 			{
 				player.timeUntilPortal = 10;
 				
-				player.mcServer.getConfigurationManager().transferPlayerToDimension(player, OuterPlanes.dimElysiumID, new TeleporterElysium(mServer.worldServerForDimension(OuterPlanes.dimElysiumID)));
+				player.mcServer.getConfigurationManager().transferPlayerToDimension(player, OuterPlanes.dimAmoriaID, new TeleporterElysium(mServer.worldServerForDimension(OuterPlanes.dimAmoriaID)));
 			}
 			else
 			{

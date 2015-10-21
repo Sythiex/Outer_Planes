@@ -1,0 +1,19 @@
+1445286597148	Delete element
+1445286922051	Rename type 'ChunkProviderElysium'
+1445286952328	Rename type 'GenLayerBiomesElysium'
+1445286964435	Rename type 'GenLayerElysium'
+1445287028827	Rename type 'WorldChunkManagerElysium'
+1445287038556	Rename type 'WorldProviderElysium'
+1445287070378	Move compilation units
+1445288445872	Delete element
+1445368665969	Rename type 'ChunkProviderElysiumAmoria'
+1445368674977	Rename type 'GenLayerBiomesElysiumAmoria'
+1445368686869	Rename type 'GenLayerElysiumAmoria'
+1445368698334	Rename type 'WorldChunkManagerElysiumAmoria'
+1445368707040	Rename type 'WorldProviderElysiumAmoria'
+1445369378283	Rename field 'dimElysiumID'
+1445371653272	Delete element
+1445372361216	Move compilation units
+1445384372428	Rename field 'BigRiver'
+1445389302124	Delete element
+1445389382537	Delete element

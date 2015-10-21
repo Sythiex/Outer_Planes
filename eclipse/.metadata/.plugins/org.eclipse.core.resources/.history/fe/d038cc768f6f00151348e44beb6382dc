@@ -1,6 +1,0 @@
-package com.sythiex.outerplanes;
-
-public class OreGenEventHandler
-{
-	@SubscribeEvent(priority=EventPriority.HIGHEST, receiveCanceled=true)
-}

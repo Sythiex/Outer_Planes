@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.Mod.EventHandler"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPreInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.Property"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.ConfigCategory"/>
-<fullyQualifiedTypeName name="net.minecraftforge.common.DimensionManager"/>
 <fullyQualifiedTypeName name="net.minecraft.world.WorldProvider"/>
 <fullyQualifiedTypeName name="net.minecraft.world.biome.WorldChunkManagerHell"/>
 <fullyQualifiedTypeName name="net.minecraft.world.chunk.IChunkProvider"/>
@@ -16,17 +13,14 @@
 <fullyQualifiedTypeName name="net.minecraft.world.ChunkCoordIntPair"/>
 <fullyQualifiedTypeName name="net.minecraft.util.LongHashMap"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="net.minecraft.world.Teleporter.PortalPosition"/>
 <fullyQualifiedTypeName name="net.minecraft.util.Direction"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockBreakable"/>
 <fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="net.minecraft.util.AxisAlignedBB"/>
 <fullyQualifiedTypeName name="net.minecraft.world.IBlockAccess"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockPortal"/>
 <fullyQualifiedTypeName name="net.minecraft.world.World"/>
-<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
 <fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayerMP"/>
 <fullyQualifiedTypeName name="net.minecraft.server.MinecraftServer"/>
 <fullyQualifiedTypeName name="net.minecraft.block.Block"/>
@@ -38,14 +32,32 @@
 <fullyQualifiedTypeName name="net.minecraft.world.gen.NoiseGenerator"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
 <fullyQualifiedTypeName name="net.minecraft.creativetab.CreativeTabs"/>
-<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="com.sythiex.outerplanes.elysium.TeleporterElysium"/>
 <fullyQualifiedTypeName name="net.minecraft.world.Teleporter"/>
-<fullyQualifiedTypeName name="com.sythiex.outerplanes.OuterPlanes"/>
 <fullyQualifiedTypeName name="net.minecraftforge.event.terraingen.OreGenEvent.GenerateMinable"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.EventPriority"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.SubscribeEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.MinecraftForge"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.eventhandler.Event.Result"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPostInitializationEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenBase"/>
+<fullyQualifiedTypeName name="com.sythiex.outerplanes.elysium.biome.BiomeGenElysiumPlains"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.DimensionManager"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="net.minecraft.crash.CrashReport"/>
+<fullyQualifiedTypeName name="net.minecraft.crash.CrashReportCategory"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ReportedException"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="net.minecraft.world.WorldType"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.IntCache"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerHills"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.layer.GenLayerShore"/>
+<fullyQualifiedTypeName name="com.sythiex.outerplanes.elysium.amoria.BiomeGenBigRiver"/>
+<fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenRiver"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary.Type"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="com.sythiex.outerplanes.OuterPlanes"/>
 </qualifiedTypeNameHistroy>

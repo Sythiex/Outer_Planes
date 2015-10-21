@@ -1,0 +1,15 @@
+package com.sythiex.outerplanes.elysium;
+
+import net.minecraft.world.gen.layer.GenLayer;
+
+public class GenLayerBiomesElysium extends GenLayer
+{
+	
+	@Override
+	public int[] getInts(int p_75904_1_, int p_75904_2_, int p_75904_3_, int p_75904_4_)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

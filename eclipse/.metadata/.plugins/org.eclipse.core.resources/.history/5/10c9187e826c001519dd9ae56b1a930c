@@ -1,8 +1,0 @@
-# Configuration file
-
-"dimension ids" {
-    #  [range: 4 ~ 255, default: 5]
-    I:"Elysium ID: "=5
-}
-
-

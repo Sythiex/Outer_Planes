@@ -1,0 +1,8 @@
+package com.sythiex.outerplanes.elysium;
+
+import net.minecraft.world.biome.WorldChunkManager;
+
+public class WorldChunkManagerElysium extends WorldChunkManager
+{
+	
+}

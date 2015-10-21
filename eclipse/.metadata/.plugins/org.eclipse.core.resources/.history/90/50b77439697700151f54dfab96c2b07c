@@ -1,0 +1,15 @@
+package com.sythiex.outerplanes.elysium.amoria;
+
+import net.minecraft.world.biome.BiomeGenBase;
+
+public class BiomeGenBigRiver extends BiomeGenBase
+{
+	public BiomeGenBigRiver(int p_i1971_1_)
+	{
+		super(p_i1971_1_);
+		this.setBiomeName("Big River");
+		this.spawnableCreatureList.clear();
+		this.setColor(255);
+		this.setHeight(new BiomeGenBase.Height(-0.7F, 0.1F));
+	}
+}

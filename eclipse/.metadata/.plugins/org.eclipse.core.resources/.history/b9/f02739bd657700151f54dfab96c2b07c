@@ -1,0 +1,14 @@
+package com.sythiex.outerplanes.elysium.amoria;
+
+import net.minecraft.world.biome.BiomeGenBase;
+
+public class BiomeGenBigRiver extends BiomeGenBase
+{
+
+	public BiomeGenBigRiver(int p_i1971_1_)
+	{
+		super(p_i1971_1_);
+		this.spawnableCreatureList.clear();
+	}
+
+}

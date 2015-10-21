@@ -14,7 +14,7 @@ public class OreGenEventHandler
 	@SubscribeEvent(priority = EventPriority.HIGHEST, receiveCanceled = true)
 	public void onEventGenerateMinable(GenerateMinable event)
 	{
-		if(event.world.provider.getDimensionName() == "Elysium")
+		if(event.world.provider.dimensionId == OuterPlanes.dimAmoriaID)
 		{
 			if(!event.type.equals(event.type.COAL) || event.type.equals(event.type.DIRT) || event.type.equals(event.type.GRAVEL))
 			{

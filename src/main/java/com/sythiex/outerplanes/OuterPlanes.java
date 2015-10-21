@@ -1,7 +1,8 @@
 package com.sythiex.outerplanes;
 
 import com.sythiex.outerplanes.elysium.PortalElysium;
-import com.sythiex.outerplanes.elysium.WorldProviderElysium;
+import com.sythiex.outerplanes.elysium.amoria.BiomeGenBigRiver;
+import com.sythiex.outerplanes.elysium.amoria.WorldProviderAmoria;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -12,6 +13,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.BiomeDictionary;
+import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.ConfigCategory;
@@ -24,7 +28,11 @@ public class OuterPlanes
 	public static final String MODID = "outerplanes";
 	public static final String VERSION = "0.1.0";
 	
-	public static int dimElysiumID;
+	public static int dimAmoriaID;
+	
+	public static int biomeBigRiverID;
+	
+	public static BiomeGenBase biomeBigRiver;
 	
 	public static Block portalBlockElysium;
 	
@@ -37,23 +45,27 @@ public class OuterPlanes
 		config.load();
 		
 		ConfigCategory dimensionIDs = new ConfigCategory("Dimension IDs");
-		dimElysiumID = config.get("Dimension IDs", "Elysium ID", 2).getInt();
+		dimAmoriaID = config.get("Dimension IDs", "Amoria ID", 2).getInt();
+		
+		ConfigCategory biomeIDs = new ConfigCategory("Biome IDs");
+		biomeBigRiverID = config.get("Biome IDs", "BigRiver ID", 50).getInt();
 		
 		config.save();
 		
-		DimensionManager.registerProviderType(dimElysiumID, WorldProviderElysium.class, false);
-		DimensionManager.registerDimension(dimElysiumID, dimElysiumID);
+		biomeBigRiver = new BiomeGenBigRiver(biomeBigRiverID);
+		
+		DimensionManager.registerProviderType(dimAmoriaID, WorldProviderAmoria.class, false);
+		DimensionManager.registerDimension(dimAmoriaID, dimAmoriaID);
 		
 		MinecraftForge.ORE_GEN_BUS.register(new OreGenEventHandler());
-		
-		registerBlocks();
-		registerItems();
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event)
 	{
-	
+		registerBlocks();
+		registerItems();
+		registerBiomes();
 	}
 	
 	@EventHandler
@@ -72,5 +84,10 @@ public class OuterPlanes
 	{
 		portalMaker = new PortalMaker();
 		GameRegistry.registerItem(portalMaker, "portalMaker");
+	}
+	
+	private void registerBiomes()
+	{
+		//BiomeDictionary.registerBiomeType(biomeBigRiver, Type.RIVER);
 	}
 }
