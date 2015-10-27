@@ -1,0 +1,140 @@
+package com.sythiex.outerplanes.global.structures;
+
+import java.util.List;
+import java.util.Random;
+
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.World;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
+import net.minecraft.world.gen.structure.StructureBoundingBox;
+import net.minecraft.world.gen.structure.StructureComponent;
+import net.minecraft.world.gen.structure.StructureStart;
+
+public class StructureOceanusPieces
+{
+	public static void registerOceanusPieces()
+	{
+		MapGenStructureIO.func_143031_a(StructureOceanusPieces.Straight.class, "OStraight");
+	}
+	
+	public static class Straight extends StructureOceanusPieces.Piece
+	{
+		public Straight()
+		{
+		}
+		
+		public Straight(int par1, Random rand, StructureBoundingBox boundingBox, int par4)
+		{
+			super(par1);
+			this.coordBaseMode = par4;
+			this.boundingBox = boundingBox;
+		}
+		
+		protected Straight(Random rand, int par2, int par3)
+		{
+			super(0);
+			this.coordBaseMode = rand.nextInt(4);
+			
+			switch(this.coordBaseMode)
+			{
+			case 0:
+			case 2:
+				this.boundingBox = new StructureBoundingBox(par2, 64, par3, par2 + 19 - 1, 73, par3 + 19 - 1);
+				break;
+			default:
+				this.boundingBox = new StructureBoundingBox(par2, 64, par3, par2 + 19 - 1, 73, par3 + 19 - 1);
+			}
+		}
+		
+		/**
+		 * Initiates construction of the Structure Component picked, at the current Location of StructGen
+		 */
+		public void buildComponent(StructureComponent component, List list, Random rand)
+		{
+		
+		}
+		
+		@Override
+		protected void func_143012_a(NBTTagCompound p_143012_1_)
+		{
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		protected void func_143011_b(NBTTagCompound p_143011_1_)
+		{
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public boolean addComponentParts(World p_74875_1_, Random p_74875_2_, StructureBoundingBox p_74875_3_)
+		{
+			// TODO Auto-generated method stub
+			return false;
+		}
+	}
+	
+	public static class Start extends StructureOceanusPieces.Straight
+	{
+		public Start()
+		{
+		}
+		
+		public Start(Random rand, int par2, int par3)
+		{
+			super(rand, par2, par3);
+		}
+	}
+	
+	abstract static class Piece extends StructureComponent
+	{
+		public Piece()
+		{
+		}
+		
+		protected Piece(int componentType)
+		{
+			super(componentType);
+		}
+		
+		private StructureOceanusPieces.Piece getNextComponent(StructureOceanusPieces.Start start)
+	}
+		
+		/**
+		 * Finds a random component to tack on to the bridge. Or builds the end.
+		 */
+		private StructureComponent getNextComponent(StructureOceanusPieces.Start startPiece, List componentsList, Random p_74962_3_, int p_74962_4_, int p_74962_5_, int p_74962_6_, int p_74962_7_, int p_74962_8_, boolean p_74962_9_)
+		{
+			StructureOceanusPieces.Piece piece = this.getNextComponent(startPiece, componentsList, p_74962_3_, p_74962_4_, p_74962_5_, p_74962_6_, p_74962_7_, p_74962_8_ + 1);
+			
+			if(piece != null)
+			{
+				componentsList.add(piece);
+				startPiece.field_74967_d.add(piece);
+			}
+			
+			return piece;
+		}
+		
+		/**
+		 * Gets the next component in any cardinal direction
+		 */
+		protected StructureComponent getNextComponentNormal(StructureOceanusPieces.Start startPiece, List componentsList, Random p_74963_3_, int p_74963_4_, int p_74963_5_, boolean p_74963_6_)
+		{
+			switch(this.coordBaseMode)
+			{
+			case 0:
+				return this.getNextComponent(startPiece, componentsList, p_74963_3_, this.boundingBox.minX + p_74963_4_, this.boundingBox.minY + p_74963_5_, this.boundingBox.maxZ + 1, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+			case 1:
+				return this.getNextComponent(startPiece, componentsList, p_74963_3_, this.boundingBox.minX - 1, this.boundingBox.minY + p_74963_5_, this.boundingBox.minZ + p_74963_4_, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+			case 2:
+				return this.getNextComponent(startPiece, componentsList, p_74963_3_, this.boundingBox.minX + p_74963_4_, this.boundingBox.minY + p_74963_5_, this.boundingBox.minZ - 1, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+			case 3:
+				return this.getNextComponent(startPiece, componentsList, p_74963_3_, this.boundingBox.maxX + 1, this.boundingBox.minY + p_74963_5_, this.boundingBox.minZ + p_74963_4_, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+			default:
+				return null;
+			}
+		}
+}

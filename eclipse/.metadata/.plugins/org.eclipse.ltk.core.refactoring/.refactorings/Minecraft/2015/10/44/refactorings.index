@@ -1,0 +1,34 @@
+1445898279871	Rename type 'BiomeGenBigRiver'
+1445898325516	Rename field 'biomeBigRiverID'
+1445898339786	Rename field 'biomeBigRiver'
+1445914111799	Move compilation unit
+1445914162109	Rename type 'PortalElysium'
+1445914201007	Move compilation unit
+1445917097657	Rename local variable 'start'
+1445917503651	Rename local variable 'p_74963_2_'
+1445917540849	Rename local variable 'p_74963_1_'
+1445917566411	Rename local variable 'p_74962_2_'
+1445917579477	Rename local variable 'p_74962_3_'
+1445917587514	Rename local variable 'p_74963_3_'
+1445917743078	Rename local variable 'p_74963_4_'
+1445917783713	Rename local variable 'x'
+1445917866166	Rename local variable 'p_74963_5_'
+1445917902730	Rename local variable 'p_74962_4_'
+1445917916813	Rename local variable 'p_74962_5_'
+1445918176894	Rename local variable 'boundingBoxX'
+1445918196981	Rename local variable 'boundingBoxX'
+1445918323446	Rename local variable 'boundingBoxXZ'
+1445918337033	Rename local variable 'p_74962_6_'
+1445918354649	Rename local variable 'p_74962_7_'
+1445918383242	Rename local variable 'p_74962_8_'
+1445918554384	Rename local variable 'p_74959_1_'
+1445918600738	Rename local variable 'p_74959_2_'
+1445919138098	Rename local variable 'p_i2054_1_'
+1445919306340	Rename local variable 'p_74959_1_'
+1445919806321	Delete element
+1445924696544	Delete element
+1445928278709	Delete element
+1445928283666	Delete element
+1445928287526	Delete element
+1445975113867	Rename local variable 'radius'
+1445983032303	Rename local variable 'p_i1971_1_'

@@ -1,8 +1,0 @@
-package com.sythiex.outerplanes.elysium.amoria;
-
-import net.minecraft.world.gen.layer.GenLayerIsland;
-
-public class GenLayerCreateLand extends GenLayerIsland
-{
-
-}

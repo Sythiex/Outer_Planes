@@ -47,6 +47,17 @@ public class WorldProviderAmoria extends WorldProvider
 	}
 	
 	@Override
+	/**
+     * A message to display to the user when they transfer to this dimension.
+     * @return The message to be displayed
+     */
+    public String getWelcomeMessage()
+    {
+		System.out.println("test");
+		return "Entering " + getDimensionName();
+    }
+	
+	@Override
 	/** sets/creates the save folder */
 	public String getSaveFolder()
 	{
@@ -64,6 +75,6 @@ public class WorldProviderAmoria extends WorldProvider
 	/** is this a surface world or an underworld */
 	public boolean isSurfaceWorld()
 	{
-		return true;
+		return false;
 	}
 }

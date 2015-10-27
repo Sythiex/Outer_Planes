@@ -43,7 +43,7 @@ public class GenLayerRiverAmoria extends GenLayer
 				}
 				else
 				{
-					aint1[j2 + i2 * p_75904_3_] = OuterPlanes.biomeBigRiverID;
+					aint1[j2 + i2 * p_75904_3_] = OuterPlanes.biomeOceanusID;
 				}
 			}
 		}

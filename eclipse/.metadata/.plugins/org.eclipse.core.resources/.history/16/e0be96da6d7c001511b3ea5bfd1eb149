@@ -1,0 +1,13 @@
+# Configuration file
+
+"biome ids" {
+    I:"BigRiver ID"=50
+    I:"Oceanus ID"=50
+}
+
+
+"dimension ids" {
+    I:"Amoria ID"=2
+}
+
+

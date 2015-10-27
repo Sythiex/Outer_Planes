@@ -1,18 +1,27 @@
 package com.sythiex.outerplanes.elysium.amoria.layer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.sythiex.outerplanes.OuterPlanes;
 
+import net.minecraft.util.WeightedRandom;
+import net.minecraft.world.WorldType;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.layer.GenLayer;
 import net.minecraft.world.gen.layer.IntCache;
+import net.minecraftforge.common.BiomeManager;
+import net.minecraftforge.common.BiomeManager.BiomeEntry;
 
 public class GenLayerBiomesAmoria extends GenLayer
 {
+	private List<BiomeEntry>[] biomes = new ArrayList[BiomeManager.BiomeType.values().length];
+	
 	protected BiomeGenBase[] allowedBiomes = { BiomeGenBase.birchForest, BiomeGenBase.birchForestHills, BiomeGenBase.coldTaiga, BiomeGenBase.coldTaigaHills, BiomeGenBase.desert, BiomeGenBase.desertHills, 
 			BiomeGenBase.extremeHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.extremeHillsPlus, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.iceMountains, BiomeGenBase.icePlains, 
 			BiomeGenBase.jungle, BiomeGenBase.jungleEdge, BiomeGenBase.jungleHills, BiomeGenBase.megaTaiga, BiomeGenBase.megaTaigaHills, BiomeGenBase.mesa, BiomeGenBase.mesaPlateau, 
 			BiomeGenBase.mesaPlateau_F, BiomeGenBase.plains, BiomeGenBase.roofedForest, BiomeGenBase.savanna, BiomeGenBase.savannaPlateau, BiomeGenBase.swampland, BiomeGenBase.taiga, 
-			BiomeGenBase.taigaHills/*, OuterPlanes.biomeBigRiver*/};
+			BiomeGenBase.taigaHills, OuterPlanes.biomeOceanus, OuterPlanes.biomeOceanus, OuterPlanes.biomeOceanus, OuterPlanes.biomeOceanus, OuterPlanes.biomeOceanus, OuterPlanes.biomeOceanus};
 	
 	public GenLayerBiomesAmoria(long seed)
 	{

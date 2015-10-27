@@ -1,0 +1,364 @@
+package com.sythiex.outerplanes.global.structures;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Random;
+
+import net.minecraft.init.Items;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.WeightedRandomChestContent;
+import net.minecraft.world.World;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
+import net.minecraft.world.gen.structure.StructureBoundingBox;
+import net.minecraft.world.gen.structure.StructureComponent;
+import net.minecraft.world.gen.structure.StructureNetherBridgePieces;
+import net.minecraft.world.gen.structure.StructureStart;
+
+public class StructureOceanusPieces
+{
+	public static void registerOceanusPieces()
+	{
+		MapGenStructureIO.func_143031_a(StructureOceanusPieces.Straight.class, "OStraight");
+	}
+	
+	public static class Straight extends StructureOceanusPieces.Piece
+	{
+		public Straight()
+		{
+		}
+		
+		public Straight(int par1, Random rand, StructureBoundingBox boundingBox, int par4)
+		{
+			super(par1);
+			this.coordBaseMode = par4;
+			this.boundingBox = boundingBox;
+		}
+		
+		protected Straight(Random rand, int par2, int par3)
+		{
+			super(0);
+			this.coordBaseMode = rand.nextInt(4);
+			
+			switch(this.coordBaseMode)
+			{
+			case 0:
+			case 2:
+				this.boundingBox = new StructureBoundingBox(par2, 64, par3, par2 + 19 - 1, 73, par3 + 19 - 1);
+				break;
+			default:
+				this.boundingBox = new StructureBoundingBox(par2, 64, par3, par2 + 19 - 1, 73, par3 + 19 - 1);
+			}
+		}
+		
+		/**
+		 * Initiates construction of the Structure Component picked, at the current Location of StructGen
+		 */
+		public void buildComponent(StructureComponent component, List list, Random rand)
+		{
+		
+		}
+		
+		@Override
+		protected void func_143012_a(NBTTagCompound p_143012_1_)
+		{
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		protected void func_143011_b(NBTTagCompound p_143011_1_)
+		{
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public boolean addComponentParts(World p_74875_1_, Random p_74875_2_, StructureBoundingBox p_74875_3_)
+		{
+			// TODO Auto-generated method stub
+			return false;
+		}
+	}
+	
+	public static class Start extends StructureOceanusPieces.Straight
+	{
+		public Start()
+		{
+		}
+		
+		public Start(Random rand, int par2, int par3)
+		{
+			super(rand, par2, par3);
+		}
+	}
+	
+	abstract static class Piece extends StructureComponent
+    {
+        protected static final WeightedRandomChestContent[] field_111019_a = new WeightedRandomChestContent[] {new WeightedRandomChestContent(Items.diamond, 0, 1, 3, 5), new WeightedRandomChestContent(Items.iron_ingot, 0, 1, 5, 5), new WeightedRandomChestContent(Items.gold_ingot, 0, 1, 3, 15), new WeightedRandomChestContent(Items.golden_sword, 0, 1, 1, 5), new WeightedRandomChestContent(Items.golden_chestplate, 0, 1, 1, 5), new WeightedRandomChestContent(Items.flint_and_steel, 0, 1, 1, 5), new WeightedRandomChestContent(Items.nether_wart, 0, 3, 7, 5), new WeightedRandomChestContent(Items.saddle, 0, 1, 1, 10), new WeightedRandomChestContent(Items.golden_horse_armor, 0, 1, 1, 8), new WeightedRandomChestContent(Items.iron_horse_armor, 0, 1, 1, 5), new WeightedRandomChestContent(Items.diamond_horse_armor, 0, 1, 1, 3)};
+        private static final String __OBFID = "CL_00000466";
+
+        public Piece() {}
+
+        protected Piece(int p_i2054_1_)
+        {
+            super(p_i2054_1_);
+        }
+
+        protected void func_143011_b(NBTTagCompound p_143011_1_) {}
+
+        protected void func_143012_a(NBTTagCompound p_143012_1_) {}
+
+        private int getTotalWeight(List p_74960_1_)
+        {
+            boolean flag = false;
+            int i = 0;
+            StructureNetherBridgePieces.PieceWeight pieceweight;
+
+            for (Iterator iterator = p_74960_1_.iterator(); iterator.hasNext(); i += pieceweight.field_78826_b)
+            {
+                pieceweight = (StructureNetherBridgePieces.PieceWeight)iterator.next();
+
+                if (pieceweight.field_78824_d > 0 && pieceweight.field_78827_c < pieceweight.field_78824_d)
+                {
+                    flag = true;
+                }
+            }
+
+            return flag ? i : -1;
+        }
+
+        private StructureNetherBridgePieces.Piece getNextComponent(StructureNetherBridgePieces.Start p_74959_1_, List p_74959_2_, List p_74959_3_, Random p_74959_4_, int p_74959_5_, int p_74959_6_, int p_74959_7_, int p_74959_8_, int p_74959_9_)
+        {
+            int j1 = this.getTotalWeight(p_74959_2_);
+            boolean flag = j1 > 0 && p_74959_9_ <= 30;
+            int k1 = 0;
+
+            while (k1 < 5 && flag)
+            {
+                ++k1;
+                int l1 = p_74959_4_.nextInt(j1);
+                Iterator iterator = p_74959_2_.iterator();
+
+                while (iterator.hasNext())
+                {
+                    StructureNetherBridgePieces.PieceWeight pieceweight = (StructureNetherBridgePieces.PieceWeight)iterator.next();
+                    l1 -= pieceweight.field_78826_b;
+
+                    if (l1 < 0)
+                    {
+                        if (!pieceweight.func_78822_a(p_74959_9_) || pieceweight == p_74959_1_.theNetherBridgePieceWeight && !pieceweight.field_78825_e)
+                        {
+                            break;
+                        }
+
+                        StructureNetherBridgePieces.Piece piece = StructureNetherBridgePieces.createNextComponentRandom(pieceweight, p_74959_3_, p_74959_4_, p_74959_5_, p_74959_6_, p_74959_7_, p_74959_8_, p_74959_9_);
+
+                        if (piece != null)
+                        {
+                            ++pieceweight.field_78827_c;
+                            p_74959_1_.theNetherBridgePieceWeight = pieceweight;
+
+                            if (!pieceweight.func_78823_a())
+                            {
+                                p_74959_2_.remove(pieceweight);
+                            }
+
+                            return piece;
+                        }
+                    }
+                }
+            }
+
+            return StructureNetherBridgePieces.End.func_74971_a(p_74959_3_, p_74959_4_, p_74959_5_, p_74959_6_, p_74959_7_, p_74959_8_, p_74959_9_);
+        }
+
+        /**
+         * Finds a random component to tack on to the bridge. Or builds the end.
+         */
+        private StructureComponent getNextComponent(StructureNetherBridgePieces.Start p_74962_1_, List p_74962_2_, Random p_74962_3_, int p_74962_4_, int p_74962_5_, int p_74962_6_, int p_74962_7_, int p_74962_8_, boolean p_74962_9_)
+        {
+            if (Math.abs(p_74962_4_ - p_74962_1_.getBoundingBox().minX) <= 112 && Math.abs(p_74962_6_ - p_74962_1_.getBoundingBox().minZ) <= 112)
+            {
+                List list1 = p_74962_1_.primaryWeights;
+
+                if (p_74962_9_)
+                {
+                    list1 = p_74962_1_.secondaryWeights;
+                }
+
+                StructureNetherBridgePieces.Piece piece = this.getNextComponent(p_74962_1_, list1, p_74962_2_, p_74962_3_, p_74962_4_, p_74962_5_, p_74962_6_, p_74962_7_, p_74962_8_ + 1);
+
+                if (piece != null)
+                {
+                    p_74962_2_.add(piece);
+                    p_74962_1_.field_74967_d.add(piece);
+                }
+
+                return piece;
+            }
+            else
+            {
+                return StructureNetherBridgePieces.End.func_74971_a(p_74962_2_, p_74962_3_, p_74962_4_, p_74962_5_, p_74962_6_, p_74962_7_, p_74962_8_);
+            }
+        }
+
+        /**
+         * Gets the next component in any cardinal direction
+         */
+        protected StructureComponent getNextComponentNormal(StructureNetherBridgePieces.Start p_74963_1_, List p_74963_2_, Random p_74963_3_, int p_74963_4_, int p_74963_5_, boolean p_74963_6_)
+        {
+            switch (this.coordBaseMode)
+            {
+                case 0:
+                    return this.getNextComponent(p_74963_1_, p_74963_2_, p_74963_3_, this.boundingBox.minX + p_74963_4_, this.boundingBox.minY + p_74963_5_, this.boundingBox.maxZ + 1, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+                case 1:
+                    return this.getNextComponent(p_74963_1_, p_74963_2_, p_74963_3_, this.boundingBox.minX - 1, this.boundingBox.minY + p_74963_5_, this.boundingBox.minZ + p_74963_4_, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+                case 2:
+                    return this.getNextComponent(p_74963_1_, p_74963_2_, p_74963_3_, this.boundingBox.minX + p_74963_4_, this.boundingBox.minY + p_74963_5_, this.boundingBox.minZ - 1, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+                case 3:
+                    return this.getNextComponent(p_74963_1_, p_74963_2_, p_74963_3_, this.boundingBox.maxX + 1, this.boundingBox.minY + p_74963_5_, this.boundingBox.minZ + p_74963_4_, this.coordBaseMode, this.getComponentType(), p_74963_6_);
+                default:
+                    return null;
+            }
+        }
+
+        /**
+         * Gets the next component in the +/- X direction
+         */
+        protected StructureComponent getNextComponentX(StructureNetherBridgePieces.Start p_74961_1_, List p_74961_2_, Random p_74961_3_, int p_74961_4_, int p_74961_5_, boolean p_74961_6_)
+        {
+            switch (this.coordBaseMode)
+            {
+                case 0:
+                    return this.getNextComponent(p_74961_1_, p_74961_2_, p_74961_3_, this.boundingBox.minX - 1, this.boundingBox.minY + p_74961_4_, this.boundingBox.minZ + p_74961_5_, 1, this.getComponentType(), p_74961_6_);
+                case 1:
+                    return this.getNextComponent(p_74961_1_, p_74961_2_, p_74961_3_, this.boundingBox.minX + p_74961_5_, this.boundingBox.minY + p_74961_4_, this.boundingBox.minZ - 1, 2, this.getComponentType(), p_74961_6_);
+                case 2:
+                    return this.getNextComponent(p_74961_1_, p_74961_2_, p_74961_3_, this.boundingBox.minX - 1, this.boundingBox.minY + p_74961_4_, this.boundingBox.minZ + p_74961_5_, 1, this.getComponentType(), p_74961_6_);
+                case 3:
+                    return this.getNextComponent(p_74961_1_, p_74961_2_, p_74961_3_, this.boundingBox.minX + p_74961_5_, this.boundingBox.minY + p_74961_4_, this.boundingBox.minZ - 1, 2, this.getComponentType(), p_74961_6_);
+                default:
+                    return null;
+            }
+        }
+
+        /**
+         * Gets the next component in the +/- Z direction
+         */
+        protected StructureComponent getNextComponentZ(StructureNetherBridgePieces.Start p_74965_1_, List p_74965_2_, Random p_74965_3_, int p_74965_4_, int p_74965_5_, boolean p_74965_6_)
+        {
+            switch (this.coordBaseMode)
+            {
+                case 0:
+                    return this.getNextComponent(p_74965_1_, p_74965_2_, p_74965_3_, this.boundingBox.maxX + 1, this.boundingBox.minY + p_74965_4_, this.boundingBox.minZ + p_74965_5_, 3, this.getComponentType(), p_74965_6_);
+                case 1:
+                    return this.getNextComponent(p_74965_1_, p_74965_2_, p_74965_3_, this.boundingBox.minX + p_74965_5_, this.boundingBox.minY + p_74965_4_, this.boundingBox.maxZ + 1, 0, this.getComponentType(), p_74965_6_);
+                case 2:
+                    return this.getNextComponent(p_74965_1_, p_74965_2_, p_74965_3_, this.boundingBox.maxX + 1, this.boundingBox.minY + p_74965_4_, this.boundingBox.minZ + p_74965_5_, 3, this.getComponentType(), p_74965_6_);
+                case 3:
+                    return this.getNextComponent(p_74965_1_, p_74965_2_, p_74965_3_, this.boundingBox.minX + p_74965_5_, this.boundingBox.minY + p_74965_4_, this.boundingBox.maxZ + 1, 0, this.getComponentType(), p_74965_6_);
+                default:
+                    return null;
+            }
+        }
+
+        /**
+         * Checks if the bounding box's minY is > 10
+         */
+        protected static boolean isAboveGround(StructureBoundingBox p_74964_0_)
+        {
+            return p_74964_0_ != null && p_74964_0_.minY > 10;
+        }
+    }
+	
+	/*
+	abstract static class Piece extends StructureComponent
+	{
+		public Piece()
+		{
+		}
+		
+		protected Piece(int componentType)
+		{
+			super(componentType);
+		}
+		
+		private StructureOceanusPieces.Piece getNextComponent(StructureOceanusPieces.Start startPiece, List componentsList, List p_74959_3_, Random p_74959_4_, int p_74959_5_, int p_74959_6_, int p_74959_7_, int p_74959_8_, int p_74959_9_)
+		{
+			int j1 = this.getTotalWeight(componentsList);
+			boolean flag = j1 > 0 && p_74959_9_ <= 30;
+			int k1 = 0;
+			
+			while(k1 < 5 && flag)
+			{
+				++k1;
+				int l1 = p_74959_4_.nextInt(j1);
+				Iterator iterator = componentsList.iterator();
+				
+				while(iterator.hasNext())
+				{
+					StructureNetherBridgePieces.PieceWeight pieceweight = (StructureNetherBridgePieces.PieceWeight) iterator.next();
+					l1 -= pieceweight.field_78826_b;
+					
+					if(l1 < 0)
+					{
+						if(!pieceweight.func_78822_a(p_74959_9_) || pieceweight == startPiece.theNetherBridgePieceWeight && !pieceweight.field_78825_e)
+						{
+							break;
+						}
+						
+						StructureNetherBridgePieces.Piece piece = StructureNetherBridgePieces.createNextComponentRandom(pieceweight, p_74959_3_, p_74959_4_, p_74959_5_, p_74959_6_, p_74959_7_, p_74959_8_, p_74959_9_);
+						
+						if(piece != null)
+						{
+							++pieceweight.field_78827_c;
+							startPiece.theNetherBridgePieceWeight = pieceweight;
+							
+							if(!pieceweight.func_78823_a())
+							{
+								componentsList.remove(pieceweight);
+							}
+							
+							return piece;
+						}
+					}
+				}
+			}
+			
+			return StructureNetherBridgePieces.End.func_74971_a(p_74959_3_, p_74959_4_, p_74959_5_, p_74959_6_, p_74959_7_, p_74959_8_, p_74959_9_);
+		}
+		
+		
+		private StructureComponent getNextComponent(StructureOceanusPieces.Start startPiece, List componentsList, Random rand, int boundingBoxX, int boundingBoxY, int boundingBoxZ, int coordBaseMode, int componentType)
+		{
+			StructureOceanusPieces.Piece piece = this.getNextComponent(startPiece, componentsList, rand, boundingBoxX, boundingBoxY, boundingBoxZ, coordBaseMode, componentType + 1);
+			
+			if(piece != null)
+			{
+				componentsList.add(piece);
+				startPiece.field_74967_d.add(piece);
+			}
+			
+			return piece;
+		}
+		
+		
+		protected StructureComponent getNextComponentNormal(StructureOceanusPieces.Start startPiece, List componentsList, Random rand, int boundingBoxXZ, int boundingBoxY)
+		{
+			switch(this.coordBaseMode)
+			{
+			case 0:
+				return this.getNextComponent(startPiece, componentsList, rand, this.boundingBox.minX + boundingBoxXZ, this.boundingBox.minY + boundingBoxY, this.boundingBox.maxZ + 1, this.coordBaseMode, this.getComponentType());
+			case 1:
+				return this.getNextComponent(startPiece, componentsList, rand, this.boundingBox.minX - 1, this.boundingBox.minY + boundingBoxY, this.boundingBox.minZ + boundingBoxXZ, this.coordBaseMode, this.getComponentType());
+			case 2:
+				return this.getNextComponent(startPiece, componentsList, rand, this.boundingBox.minX + boundingBoxXZ, this.boundingBox.minY + boundingBoxY, this.boundingBox.minZ - 1, this.coordBaseMode, this.getComponentType());
+			case 3:
+				return this.getNextComponent(startPiece, componentsList, rand, this.boundingBox.maxX + 1, this.boundingBox.minY + boundingBoxY, this.boundingBox.minZ + boundingBoxXZ, this.coordBaseMode, this.getComponentType());
+			default:
+				return null;
+			}
+		}
+	}
+	*/
+}

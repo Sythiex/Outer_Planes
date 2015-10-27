@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.sythiex.outerplanes.OuterPlanes;
+import com.sythiex.outerplanes.global.blocks.BlockPortalElysiumAmoria;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
@@ -20,7 +21,7 @@ import net.minecraft.world.WorldServer;
 
 public class TeleporterElysium extends Teleporter
 {
-	public static final Block portalFrameBlockElysium = PortalElysium.portalFrameBlockElysium;
+	public static final Block portalFrameBlockElysium = BlockPortalElysiumAmoria.portalFrameBlockElysium;
 	
     private final WorldServer worldServerInstance;
     /** A private Random() function in Teleporter */

@@ -2,37 +2,37 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="River" key="selection"/>
+		<item value="WelcomeMess" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="river"/>
-			<item value="gamere"/>
-			<item value="genlayerriver"/>
-			<item value="genlayer1"/>
-			<item value="gen"/>
-			<item value="layer"/>
-			<item value="p_147422_5_"/>
-			<item value="p_147422_4_"/>
+			<item value="welcomemess"/>
+			<item value="message"/>
+			<item value="ent"/>
+			<item value="p_75904_4_"/>
+			<item value="p_75904_3_"/>
+			<item value="p_75904_2_"/>
+			<item value="p_75904_1_"/>
+			<item value="biomesForGeneration"/>
 		</list>
 		<list key="replacehistory">
-			<item value="biomesForGeneration"/>
-			<item value="abyte"/>
-			<item value="ablock"/>
-			<item value="chunkZ"/>
-			<item value="chunkX"/>
+			<item value="depth"/>
+			<item value="width"/>
 			<item value="z"/>
-			<item value="y"/>
 			<item value="x"/>
+			<item value="p_147424_2_"/>
+			<item value="p_147424_1_"/>
+			<item value="rand"/>
+			<item value="world"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="1398" key="DIALOG_X_ORIGIN"/>
-		<item value="209" key="DIALOG_Y_ORIGIN"/>
+		<item value="353" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="513" key="DIALOG_HEIGHT"/>
+		<item value="1697" key="DIALOG_X_ORIGIN"/>
+		<item value="227" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

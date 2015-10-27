@@ -1,8 +1,10 @@
 package com.sythiex.outerplanes;
 
-import com.sythiex.outerplanes.elysium.PortalElysium;
-import com.sythiex.outerplanes.elysium.amoria.BiomeGenBigRiver;
+import com.sythiex.outerplanes.elysium.amoria.BiomeGenOceanus;
+import com.sythiex.outerplanes.elysium.amoria.GeneratorElysiumAmoria;
 import com.sythiex.outerplanes.elysium.amoria.WorldProviderAmoria;
+import com.sythiex.outerplanes.global.blocks.BlockPortalElysiumAmoria;
+import com.sythiex.outerplanes.global.items.PortalMaker;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -30,9 +32,9 @@ public class OuterPlanes
 	
 	public static int dimAmoriaID;
 	
-	public static int biomeBigRiverID;
+	public static int biomeOceanusID;
 	
-	public static BiomeGenBase biomeBigRiver;
+	public static BiomeGenBase biomeOceanus;
 	
 	public static Block portalBlockElysium;
 	
@@ -48,14 +50,16 @@ public class OuterPlanes
 		dimAmoriaID = config.get("Dimension IDs", "Amoria ID", 2).getInt();
 		
 		ConfigCategory biomeIDs = new ConfigCategory("Biome IDs");
-		biomeBigRiverID = config.get("Biome IDs", "BigRiver ID", 50).getInt();
+		biomeOceanusID = config.get("Biome IDs", "Oceanus ID", 50).getInt();
 		
 		config.save();
 		
-		biomeBigRiver = new BiomeGenBigRiver(biomeBigRiverID);
+		biomeOceanus = new BiomeGenOceanus(biomeOceanusID);
 		
 		DimensionManager.registerProviderType(dimAmoriaID, WorldProviderAmoria.class, false);
 		DimensionManager.registerDimension(dimAmoriaID, dimAmoriaID);
+		
+		GameRegistry.registerWorldGenerator(new GeneratorElysiumAmoria(), 0);
 		
 		MinecraftForge.ORE_GEN_BUS.register(new OreGenEventHandler());
 	}
@@ -65,7 +69,6 @@ public class OuterPlanes
 	{
 		registerBlocks();
 		registerItems();
-		registerBiomes();
 	}
 	
 	@EventHandler
@@ -76,7 +79,7 @@ public class OuterPlanes
 	
 	private void registerBlocks()
 	{
-		portalBlockElysium = new PortalElysium();
+		portalBlockElysium = new BlockPortalElysiumAmoria();
 		GameRegistry.registerBlock(portalBlockElysium, "portalElysium");
 	}
 	
@@ -84,10 +87,5 @@ public class OuterPlanes
 	{
 		portalMaker = new PortalMaker();
 		GameRegistry.registerItem(portalMaker, "portalMaker");
-	}
-	
-	private void registerBiomes()
-	{
-		//BiomeDictionary.registerBiomeType(biomeBigRiver, Type.RIVER);
 	}
 }

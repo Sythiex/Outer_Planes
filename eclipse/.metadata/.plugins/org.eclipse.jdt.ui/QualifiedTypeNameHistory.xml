@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLPreInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
 <fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLInitializationEvent"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.Property"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary.Type"/>
 <fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="com.sythiex.outerplanes.OuterPlanes"/>
+<fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenOcean"/>
 </qualifiedTypeNameHistroy>

@@ -1,47 +1,137 @@
-[20:37:59] [main/INFO]: Setting user: Player285
-[20:38:00] [Client thread/INFO]: LWJGL Version: 2.9.1
-[20:38:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Outer Planes
-[20:38:05] [Sound Library Loader/INFO]: Sound engine started
-[20:38:07] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:38:07] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:38:07] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Outer Planes
-[20:38:07] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[20:38:07] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[20:38:08] [Sound Library Loader/INFO]: Sound engine started
-[20:38:14] [Client thread/INFO]: Deleting level New World
-[20:38:14] [Client thread/INFO]: Attempt 1...
-[20:38:16] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[20:38:16] [Server thread/INFO]: Generating keypair
-[20:38:16] [Server thread/INFO]: Converting map!
-[20:38:16] [Server thread/INFO]: Scanning folders...
-[20:38:16] [Server thread/INFO]: Total conversion count is 0
-[20:38:16] [Server thread/INFO]: Preparing start region for level 0
-[20:38:17] [Server thread/INFO]: Preparing spawn area: 8%
-[20:38:18] [Server thread/INFO]: Preparing spawn area: 21%
-[20:38:19] [Server thread/INFO]: Preparing spawn area: 37%
-[20:38:20] [Server thread/INFO]: Preparing spawn area: 55%
-[20:38:21] [Server thread/INFO]: Preparing spawn area: 73%
-[20:38:22] [Server thread/INFO]: Preparing spawn area: 94%
-[20:38:23] [Server thread/INFO]: Changing view distance to 12, from 10
-[20:38:23] [Server thread/INFO]: Player285[local:E:4a9469e0] logged in with entity id 96 at (-201.5, 67.0, -9.5)
-[20:38:23] [Server thread/INFO]: Player285 joined the game
-[20:38:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 114 ms
-[20:38:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 112 ms
-[20:45:56] [Server thread/INFO]: Player285 has just earned the achievement [Taking Inventory]
-[20:45:56] [Client thread/INFO]: [CHAT] Player285 has just earned the achievement [Taking Inventory]
-[20:46:08] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 6844ms behind, skipping 136 tick(s)
-[20:46:22] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3704ms behind, skipping 74 tick(s)
-[20:47:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 111 ms
-[20:48:57] [Server thread/INFO]: Saving and pausing game...
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/Amoria, Elysium
-[20:48:57] [Server thread/INFO]: Stopping server
-[20:48:57] [Server thread/INFO]: Saving players
-[20:48:57] [Server thread/INFO]: Saving worlds
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[20:48:57] [Server thread/INFO]: Saving chunks for level 'New World'/Amoria, Elysium
-[20:48:59] [Client thread/INFO]: Stopping!
+[17:12:10] [main/INFO]: Setting user: Player902
+[17:12:12] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:12:21] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Outer Planes
+[17:12:23] [Sound Library Loader/INFO]: Sound engine started
+[17:12:26] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:12:26] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:12:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Outer Planes
+[17:12:27] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:12:27] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:12:28] [Sound Library Loader/INFO]: Sound engine started
+[17:12:37] [Client thread/INFO]: Deleting level New World
+[17:12:37] [Client thread/INFO]: Attempt 1...
+[17:12:40] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:12:40] [Server thread/INFO]: Generating keypair
+[17:12:40] [Server thread/INFO]: Converting map!
+[17:12:40] [Server thread/INFO]: Scanning folders...
+[17:12:40] [Server thread/INFO]: Total conversion count is 0
+[17:12:43] [Server thread/INFO]: Preparing start region for level 0
+[17:12:44] [Server thread/INFO]: Preparing spawn area: 5%
+[17:12:45] [Server thread/INFO]: Preparing spawn area: 10%
+[17:12:47] [Server thread/INFO]: Preparing spawn area: 17%
+[17:12:48] [Server thread/INFO]: Preparing spawn area: 26%
+[17:12:49] [Server thread/INFO]: Preparing spawn area: 34%
+[17:12:50] [Server thread/INFO]: Preparing spawn area: 48%
+[17:12:51] [Server thread/INFO]: Preparing spawn area: 58%
+[17:12:52] [Server thread/INFO]: Preparing spawn area: 74%
+[17:12:53] [Server thread/INFO]: Preparing spawn area: 83%
+[17:12:54] [Server thread/INFO]: Preparing spawn area: 94%
+[17:12:54] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:12:55] [Server thread/INFO]: Player902[local:E:c0b7a42d] logged in with entity id 88 at (-227.5, 69.0, 697.5)
+[17:12:55] [Server thread/INFO]: Player902 joined the game
+[17:12:56] [Server thread/INFO]: Saving and pausing game...
+[17:12:57] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:13:07] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:13:07] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:13:07] [Server thread/INFO]: Saving chunks for level 'New World'/Amoria, Elysium
+[17:13:24] [Server thread/INFO]: Player902 has just earned the achievement [Taking Inventory]
+[17:13:24] [Client thread/INFO]: [CHAT] Player902 has just earned the achievement [Taking Inventory]
+[17:13:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 31313ms behind, skipping 626 tick(s)
+[17:13:29] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2752ms behind, skipping 55 tick(s)
+[17:13:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 324 ms
+[17:13:31] [Client thread/INFO]: Warning: Clientside chunk ticking took 284 ms
+[17:13:31] [Client thread/INFO]: Warning: Clientside chunk ticking took 166 ms
+[17:13:33] [Client thread/INFO]: Warning: Clientside chunk ticking took 203 ms
+[17:13:33] [Client thread/INFO]: Warning: Clientside chunk ticking took 130 ms
+[17:13:33] [Client thread/INFO]: Warning: Clientside chunk ticking took 118 ms
+[17:13:34] [Client thread/INFO]: Warning: Clientside chunk ticking took 219 ms
+[17:13:34] [Client thread/INFO]: Warning: Clientside chunk ticking took 231 ms
+[17:13:35] [Client thread/INFO]: Warning: Clientside chunk ticking took 153 ms
+[17:13:35] [Client thread/INFO]: Warning: Clientside chunk ticking took 127 ms
+[17:13:40] [Server thread/INFO]: Saving and pausing game...
+[17:13:40] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:13:40] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:13:40] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:14:32] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 12007ms behind, skipping 240 tick(s)
+[17:14:34] [Server thread/INFO]: Saving and pausing game...
+[17:14:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:14:34] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:14:34] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:14:34] [Server thread/INFO]: Saving chunks for level 'New World'/Amoria, Elysium
+[17:14:45] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2020ms behind, skipping 40 tick(s)
+[17:15:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2234ms behind, skipping 44 tick(s)
+[17:15:08] [Client thread/INFO]: Warning: Clientside chunk ticking took 410 ms
+[17:15:08] [Client thread/INFO]: Warning: Clientside chunk ticking took 491 ms
+[17:15:09] [Client thread/INFO]: Warning: Clientside chunk ticking took 469 ms
+[17:15:09] [Client thread/INFO]: Warning: Clientside chunk ticking took 622 ms
+[17:15:14] [Client thread/INFO]: Warning: Clientside chunk ticking took 468 ms
+[17:15:15] [Client thread/INFO]: Warning: Clientside chunk ticking took 519 ms
+[17:15:16] [Client thread/INFO]: Warning: Clientside chunk ticking took 528 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 189 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 149 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 123 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 118 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 138 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 148 ms
+[17:15:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 131 ms
+[17:15:18] [Client thread/INFO]: Warning: Clientside chunk ticking took 122 ms
+[17:15:18] [Client thread/INFO]: Warning: Clientside chunk ticking took 189 ms
+[17:15:20] [Client thread/INFO]: Warning: Clientside chunk ticking took 343 ms
+[17:15:20] [Client thread/INFO]: Warning: Clientside chunk ticking took 144 ms
+[17:15:20] [Client thread/INFO]: Warning: Clientside chunk ticking took 279 ms
+[17:15:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 527 ms
+[17:15:23] [Client thread/INFO]: Warning: Clientside chunk ticking took 287 ms
+[17:15:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 383 ms
+[17:15:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 228 ms
+[17:15:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 409 ms
+[17:15:26] [Client thread/INFO]: Warning: Clientside chunk ticking took 236 ms
+[17:15:27] [Client thread/INFO]: Warning: Clientside chunk ticking took 250 ms
+[17:15:27] [Client thread/INFO]: Warning: Clientside chunk ticking took 242 ms
+[17:15:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 185 ms
+[17:15:34] [Client thread/INFO]: Warning: Clientside chunk ticking took 441 ms
+[17:15:35] [Client thread/INFO]: Warning: Clientside chunk ticking took 150 ms
+[17:15:35] [Client thread/INFO]: Warning: Clientside chunk ticking took 144 ms
+[17:15:39] [Client thread/INFO]: Warning: Clientside chunk ticking took 307 ms
+[17:15:40] [Client thread/INFO]: Warning: Clientside chunk ticking took 389 ms
+[17:15:40] [Client thread/INFO]: Warning: Clientside chunk ticking took 293 ms
+[17:15:52] [Client thread/INFO]: Warning: Clientside chunk ticking took 388 ms
+[17:15:54] [Client thread/INFO]: Warning: Clientside chunk ticking took 206 ms
+[17:15:59] [Client thread/INFO]: Warning: Clientside chunk ticking took 201 ms
+[17:16:00] [Client thread/INFO]: Warning: Clientside chunk ticking took 372 ms
+[17:16:01] [Client thread/INFO]: Warning: Clientside chunk ticking took 171 ms
+[17:16:03] [Client thread/INFO]: Warning: Clientside chunk ticking took 141 ms
+[17:16:05] [Client thread/INFO]: Warning: Clientside chunk ticking took 318 ms
+[17:16:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 305 ms
+[17:17:35] [Client thread/INFO]: Warning: Clientside chunk ticking took 381 ms
+[17:17:56] [Client thread/INFO]: Warning: Clientside chunk ticking took 230 ms
+[17:17:56] [Client thread/INFO]: Warning: Clientside chunk ticking took 193 ms
+[17:17:59] [Client thread/INFO]: Warning: Clientside chunk ticking took 465 ms
+[17:18:05] [Client thread/INFO]: Warning: Clientside chunk ticking took 224 ms
+[17:18:06] [Client thread/INFO]: Warning: Clientside chunk ticking took 246 ms
+[17:18:07] [Client thread/INFO]: Warning: Clientside chunk ticking took 302 ms
+[17:18:10] [Client thread/INFO]: Warning: Clientside chunk ticking took 396 ms
+[17:18:12] [Client thread/INFO]: Warning: Clientside chunk ticking took 440 ms
+[17:18:13] [Client thread/INFO]: Warning: Clientside chunk ticking took 297 ms
+[17:18:15] [Client thread/INFO]: Warning: Clientside chunk ticking took 214 ms
+[17:18:20] [Client thread/INFO]: Warning: Clientside chunk ticking took 558 ms
+[17:18:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 506 ms
+[17:18:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 315 ms
+[17:18:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 225 ms
+[17:18:21] [Client thread/INFO]: Warning: Clientside chunk ticking took 117 ms
+[17:18:22] [Client thread/INFO]: Warning: Clientside chunk ticking took 209 ms
+[17:18:23] [Client thread/INFO]: Warning: Clientside chunk ticking took 290 ms
+[17:18:28] [Client thread/INFO]: Warning: Clientside chunk ticking took 319 ms
+[17:18:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 177 ms
+[17:19:38] [Server thread/INFO]: Saving and pausing game...
+[17:19:38] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:19:38] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:19:38] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:19:38] [Server thread/INFO]: Saving chunks for level 'New World'/Amoria, Elysium
+[17:19:39] [Server thread/INFO]: Stopping server
+[17:19:39] [Server thread/INFO]: Saving players
+[17:19:39] [Server thread/INFO]: Saving worlds
+[17:19:39] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[17:19:39] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[17:19:39] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[17:19:39] [Server thread/INFO]: Saving chunks for level 'New World'/Amoria, Elysium
+[17:19:41] [Client thread/INFO]: Stopping!

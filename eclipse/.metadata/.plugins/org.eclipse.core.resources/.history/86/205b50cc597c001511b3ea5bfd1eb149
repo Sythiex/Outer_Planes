@@ -1,0 +1,38 @@
+package com.sythiex.outerplanes.global.structures;
+
+import java.util.Random;
+
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.world.gen.structure.MapGenStructureIO;
+import net.minecraft.world.gen.structure.StructureBoundingBox;
+import net.minecraft.world.gen.structure.StructureComponent;
+import net.minecraft.world.gen.structure.StructureStart;
+
+public class StructureOceanusPieces
+{
+	public static void registerOceanusPieces()
+	{
+		MapGenStructureIO.func_143031_a(StructureOceanusPieces.Straight.class, "OStraight");
+	}
+	
+	public static class Straight extends StructureOceanusPieces.Piece
+	{
+		
+	}
+	
+	public static class Start extends StructureOceanusPieces.Straight
+	
+	abstract static class Piece extends StructureComponent
+	{
+		public Piece()
+		{
+		}
+		
+		protected Piece(int componentType)
+		{
+			super(componentType);
+		}
+		
+		private StructureOceanusPieces.Piece getNextComponent(StructureOceanusPieces.Start start)
+	}
+}

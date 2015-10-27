@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFalling;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.IProgressUpdate;
@@ -43,9 +44,9 @@ public class ChunkProviderAmoria implements IChunkProvider
 	private NoiseGeneratorOctaves noiseGen3;
 	private NoiseGeneratorPerlin noisePer1;
 	/** A NoiseGeneratorOctaves used in generating terrain */
-	public NoiseGeneratorOctaves noiseGen5;
+	public NoiseGeneratorOctaves noiseGen4;
 	/** A NoiseGeneratorOctaves used in generating terrain */
-	public NoiseGeneratorOctaves noiseGen6;
+	public NoiseGeneratorOctaves noiseGen5;
 	public NoiseGeneratorOctaves mobSpawnerNoise;
 	/** Reference to the World object. */
 	private World worldObj;
@@ -92,8 +93,8 @@ public class ChunkProviderAmoria implements IChunkProvider
 		this.noiseGen2 = new NoiseGeneratorOctaves(this.rand, 16);
 		this.noiseGen3 = new NoiseGeneratorOctaves(this.rand, 8);
 		this.noisePer1 = new NoiseGeneratorPerlin(this.rand, 4);
-		this.noiseGen5 = new NoiseGeneratorOctaves(this.rand, 10);
-		this.noiseGen6 = new NoiseGeneratorOctaves(this.rand, 16);
+		this.noiseGen4 = new NoiseGeneratorOctaves(this.rand, 10);
+		this.noiseGen5 = new NoiseGeneratorOctaves(this.rand, 16);
 		this.mobSpawnerNoise = new NoiseGeneratorOctaves(this.rand, 8);
 		this.noiseArray = new double[825];
 		this.parabolicField = new float[25];
@@ -107,14 +108,14 @@ public class ChunkProviderAmoria implements IChunkProvider
 			}
 		}
 		
-		NoiseGenerator[] noiseGens = { noiseGen1, noiseGen2, noiseGen3, noisePer1, noiseGen5, noiseGen6, mobSpawnerNoise };
+		NoiseGenerator[] noiseGens = { noiseGen1, noiseGen2, noiseGen3, noisePer1, noiseGen4, noiseGen5, mobSpawnerNoise };
 		noiseGens = TerrainGen.getModdedNoiseGenerators(world, this.rand, noiseGens);
 		this.noiseGen1 = (NoiseGeneratorOctaves) noiseGens[0];
 		this.noiseGen2 = (NoiseGeneratorOctaves) noiseGens[1];
 		this.noiseGen3 = (NoiseGeneratorOctaves) noiseGens[2];
 		this.noisePer1 = (NoiseGeneratorPerlin) noiseGens[3];
-		this.noiseGen5 = (NoiseGeneratorOctaves) noiseGens[4];
-		this.noiseGen6 = (NoiseGeneratorOctaves) noiseGens[5];
+		this.noiseGen4 = (NoiseGeneratorOctaves) noiseGens[4];
+		this.noiseGen5 = (NoiseGeneratorOctaves) noiseGens[5];
 		this.mobSpawnerNoise = (NoiseGeneratorOctaves) noiseGens[6];
 	}
 	
@@ -271,7 +272,7 @@ public class ChunkProviderAmoria implements IChunkProvider
 		double d1 = 684.412D;
 		double d2 = 512.0D;
 		double d3 = 512.0D;
-		this.noise5 = this.noiseGen6.generateNoiseOctaves(this.noise5, p_147423_1_, p_147423_3_, 5, 5, 200.0D, 200.0D, 0.5D);
+		this.noise5 = this.noiseGen5.generateNoiseOctaves(this.noise5, p_147423_1_, p_147423_3_, 5, 5, 200.0D, 200.0D, 0.5D);
 		this.noise3 = this.noiseGen3.generateNoiseOctaves(this.noise3, p_147423_1_, p_147423_2_, p_147423_3_, 5, 33, 5, 8.555150000000001D, 4.277575000000001D, 8.555150000000001D);
 		this.noise1 = this.noiseGen1.generateNoiseOctaves(this.noise1, p_147423_1_, p_147423_2_, p_147423_3_, 5, 33, 5, 684.412D, 684.412D, 684.412D);
 		this.noise2 = this.noiseGen2.generateNoiseOctaves(this.noise2, p_147423_1_, p_147423_2_, p_147423_3_, 5, 33, 5, 684.412D, 684.412D, 684.412D);
@@ -429,7 +430,7 @@ public class ChunkProviderAmoria implements IChunkProvider
 			k1 = k + this.rand.nextInt(16) + 8;
 			l1 = this.rand.nextInt(256);
 			i2 = l + this.rand.nextInt(16) + 8;
-			// (new WorldGenLakes(Blocks.water)).generate(this.worldObj, this.rand, k1, l1, i2);
+			(new WorldGenLakes(Blocks.water)).generate(this.worldObj, this.rand, k1, l1, i2);
 		}
 		
 		if(TerrainGen.populate(chunkProvider, worldObj, rand, p_73153_2_, p_73153_3_, flag, LAVA) && !flag && this.rand.nextInt(8) == 0)
@@ -440,7 +441,7 @@ public class ChunkProviderAmoria implements IChunkProvider
 			
 			if(l1 < 63 || this.rand.nextInt(10) == 0)
 			{
-				// (new WorldGenLakes(Blocks.lava)).generate(this.worldObj, this.rand, k1, l1, i2);
+				(new WorldGenLakes(Blocks.lava)).generate(this.worldObj, this.rand, k1, l1, i2);
 			}
 		}
 		
