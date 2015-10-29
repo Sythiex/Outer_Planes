@@ -3333,3 +3333,51 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2015-10-29 01:03:24.828
+!MESSAGE Participant 'org.eclipse.jdt.debug.refactoring.breakpoint.packageRename' removed due to the following exception
+!STACK 1
+org.eclipse.debug.core.DebugException: Resource '/Minecraft/src/main/java/com/sythiex/outerplanes/world/elysium/amoria/GeneratorElysiumAmoria.java' does not exist.
+	at org.eclipse.debug.core.model.Breakpoint.run(Breakpoint.java:359)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:163)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:135)
+	at org.eclipse.jdt.debug.core.JDIDebugModel.createLineBreakpoint(JDIDebugModel.java:325)
+	at org.eclipse.jdt.internal.debug.core.refactoring.LineBreakpointTypeChange.perform(LineBreakpointTypeChange.java:62)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-10-29 01:03:24.830
+!MESSAGE Resource '/Minecraft/src/main/java/com/sythiex/outerplanes/world/elysium/amoria/GeneratorElysiumAmoria.java' does not exist.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2015-10-29 01:03:24.913
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.debug.core.DebugException: Resource '/Minecraft/src/main/java/com/sythiex/outerplanes/world/elysium/amoria/GeneratorElysiumAmoria.java' does not exist.
+	at org.eclipse.debug.core.model.Breakpoint.run(Breakpoint.java:359)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:163)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:135)
+	at org.eclipse.jdt.debug.core.JDIDebugModel.createLineBreakpoint(JDIDebugModel.java:325)
+	at org.eclipse.jdt.internal.debug.core.refactoring.LineBreakpointTypeChange.perform(LineBreakpointTypeChange.java:62)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2015-10-29 01:03:24.914
+!MESSAGE Resource '/Minecraft/src/main/java/com/sythiex/outerplanes/world/elysium/amoria/GeneratorElysiumAmoria.java' does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2015-10-29 01:03:24.922
+!MESSAGE Resource '/Minecraft/src/main/java/com/sythiex/outerplanes/world/elysium/amoria/GeneratorElysiumAmoria.java' does not exist.
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-10-29 01:11:19.885
+!MESSAGE The workspace will exit with unsaved changes in this session.

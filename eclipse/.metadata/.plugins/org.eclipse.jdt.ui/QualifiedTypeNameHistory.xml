@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="net.minecraftforge.common.config.Configuration"/>
-<fullyQualifiedTypeName name="cpw.mods.fml.common.event.FMLInitializationEvent"/>
-<fullyQualifiedTypeName name="net.minecraftforge.common.config.Property"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.config.ConfigCategory"/>
 <fullyQualifiedTypeName name="net.minecraft.world.WorldProvider"/>
 <fullyQualifiedTypeName name="net.minecraft.world.biome.WorldChunkManagerHell"/>
@@ -11,7 +8,6 @@
 <fullyQualifiedTypeName name="net.minecraft.util.MathHelper"/>
 <fullyQualifiedTypeName name="net.minecraft.world.ChunkCoordIntPair"/>
 <fullyQualifiedTypeName name="net.minecraft.util.LongHashMap"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="net.minecraft.world.Teleporter.PortalPosition"/>
 <fullyQualifiedTypeName name="net.minecraft.util.Direction"/>
 <fullyQualifiedTypeName name="net.minecraft.block.BlockBreakable"/>
@@ -42,8 +38,6 @@
 <fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenBase"/>
 <fullyQualifiedTypeName name="com.sythiex.outerplanes.elysium.biome.BiomeGenElysiumPlains"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.DimensionManager"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="net.minecraft.crash.CrashReport"/>
 <fullyQualifiedTypeName name="net.minecraft.crash.CrashReportCategory"/>
 <fullyQualifiedTypeName name="net.minecraft.util.ReportedException"/>
@@ -57,7 +51,13 @@
 <fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenRiver"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary"/>
 <fullyQualifiedTypeName name="net.minecraftforge.common.BiomeDictionary.Type"/>
-<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="com.sythiex.outerplanes.OuterPlanes"/>
 <fullyQualifiedTypeName name="net.minecraft.world.biome.BiomeGenOcean"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="net.minecraftforge.common.BiomeManager.BiomeType"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

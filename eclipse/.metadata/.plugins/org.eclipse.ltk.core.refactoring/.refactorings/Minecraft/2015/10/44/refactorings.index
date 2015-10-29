@@ -32,3 +32,39 @@
 1445928287526	Delete element
 1445975113867	Rename local variable 'radius'
 1445983032303	Rename local variable 'p_i1971_1_'
+1446065737396	Rename local variable 'par1World'
+1446065750496	Rename local variable 'par2'
+1446065755563	Rename local variable 'par3'
+1446065766664	Rename local variable 'par4'
+1446065775736	Rename local variable 'par5Entity'
+1446065836836	Rename local variable 'par1World'
+1446065840370	Rename local variable 'par2'
+1446065844956	Rename local variable 'par3'
+1446065848984	Rename local variable 'par4'
+1446065870584	Rename local variable 'par1World'
+1446065907185	Rename local variable 'par2'
+1446065913228	Rename local variable 'par3'
+1446065917292	Rename local variable 'par4'
+1446065923909	Rename local variable 'par5'
+1446065992664	Rename local variable 'p_77185_1_'
+1446066096010	Rename local variable 'p_77184_1_'
+1446066139140	Rename local variable 'p_85188_1_'
+1446066755796	Rename field 'portalCoordsEroniaY'
+1446068716268	Rename local variable 'par2WorldType'
+1446068841643	Rename local variable 'worldSeed'
+1446069865234	Rename local variable 'p_i2122_1_'
+1446069873336	Rename local variable 'p_i2122_3_'
+1446069879929	Rename local variable 'p_i2122_4_'
+1446089129293	Rename field 'dimAmoriaID'
+1446089138073	Rename field 'biomeOceanusID'
+1446097917586	Rename local variable 'ret'
+1446098174856	Delete element
+1446098229633	Delete element
+1446098274999	Delete element
+1446098426954	Move compilation units
+1446098445213	Delete element
+1446098482982	Rename package 'com.sythiex.outerplanes.global.blocks'
+1446098499667	Rename package 'com.sythiex.outerplanes.global.items'
+1446098626738	Rename package 'com.sythiex.outerplanes.elysium.amoria'
+1446098643019	Rename package 'com.sythiex.outerplanes.elysium'
+1446098702124	Move compilation unit

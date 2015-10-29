@@ -1,10 +1,10 @@
 package com.sythiex.outerplanes;
 
-import com.sythiex.outerplanes.elysium.amoria.BiomeGenOceanus;
-import com.sythiex.outerplanes.elysium.amoria.GeneratorElysiumAmoria;
-import com.sythiex.outerplanes.elysium.amoria.WorldProviderAmoria;
-import com.sythiex.outerplanes.global.blocks.BlockPortalElysiumAmoria;
-import com.sythiex.outerplanes.global.items.PortalMaker;
+import com.sythiex.outerplanes.blocks.BlockPortalElysiumAmoria;
+import com.sythiex.outerplanes.event.OreGenEventHandler;
+import com.sythiex.outerplanes.items.PortalMaker;
+import com.sythiex.outerplanes.world.elysium.amoria.GeneratorElysiumAmoria;
+import com.sythiex.outerplanes.world.elysium.amoria.WorldProviderAmoria;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -30,11 +30,7 @@ public class OuterPlanes
 	public static final String MODID = "outerplanes";
 	public static final String VERSION = "0.1.0";
 	
-	public static int dimAmoriaID;
-	
-	public static int biomeOceanusID;
-	
-	public static BiomeGenBase biomeOceanus;
+	public static int dimIDAmoria;
 	
 	public static Block portalBlockElysium;
 	
@@ -47,17 +43,14 @@ public class OuterPlanes
 		config.load();
 		
 		ConfigCategory dimensionIDs = new ConfigCategory("Dimension IDs");
-		dimAmoriaID = config.get("Dimension IDs", "Amoria ID", 2).getInt();
+		dimIDAmoria = config.get("Dimension IDs", "Amoria ID", 2).getInt();
 		
-		ConfigCategory biomeIDs = new ConfigCategory("Biome IDs");
-		biomeOceanusID = config.get("Biome IDs", "Oceanus ID", 50).getInt();
+		// ConfigCategory biomeIDs = new ConfigCategory("Biome IDs");
 		
 		config.save();
 		
-		biomeOceanus = new BiomeGenOceanus(biomeOceanusID);
-		
-		DimensionManager.registerProviderType(dimAmoriaID, WorldProviderAmoria.class, false);
-		DimensionManager.registerDimension(dimAmoriaID, dimAmoriaID);
+		DimensionManager.registerProviderType(dimIDAmoria, WorldProviderAmoria.class, false);
+		DimensionManager.registerDimension(dimIDAmoria, dimIDAmoria);
 		
 		GameRegistry.registerWorldGenerator(new GeneratorElysiumAmoria(), 0);
 		
